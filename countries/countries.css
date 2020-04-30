@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.country-heading{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.w-message{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;   
+}
+.return{
+    text-align: center;
+    text-decoration: none;
+    padding-left: 40%;
+    list-style: none;
+    font-size: 1.2rem;
+    color: rgb(110, 110, 110);
+}
