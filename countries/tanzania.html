@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foresight - Kenya</title>
+    <title>Foresight - Tanzania</title>
     <link rel="icon" type="image/ico" href="../img/logo.png">
 
     <!-- Bootstrap CDN -->
@@ -15,8 +15,8 @@
 <body>
     
         
-        <h1 class="country-heading">Kenya</h1>
-        <h4 class="w-message">Welcome to Kenya's Dataset! Here you will find graphs and visualizations about climate change and changing weather conditions in Kenya.</h4>
+        <h1 class="country-heading">Tanzania</h1>
+        <h4 class="w-message">Welcome to Tanzania's Dataset! Here you will find graphs and visualizations about climate change and changing weather conditions in Tanzania.</h4>
         <a href="../index.html" class="return">Click here to return to the Map of Africa</a>
         <!--Div that will hold the visualisations-->
     <table class="columns">
@@ -68,14 +68,14 @@
              data.addColumn('string', 'Year');
              data.addColumn('number', 'Tonnes');
              data.addRows([
-               ['2012', 11.97],
-               ['2013', 12.77],
-               ['2014', 13.66],
-               ['2015', 14.55],
-               ['2016', 15.31],
-               ['2017', 15.81],
-               ['2018', 16.65],
-               ['2019', 18.04]
+               ['2012', 8.23],
+               ['2013', 8.54],
+               ['2014', 8.91],
+               ['2015', 8.86],
+               ['2016', 9.03],
+               ['2017', 9.45],
+               ['2018', 11.21],
+               ['2019', 10.98]
              ]);
      
              // Set chart options
@@ -98,19 +98,19 @@
                data.addColumn('string', 'By Sector');
                data.addColumn('number', 'Million Tonnes');
                data.addRows([
-                   ['Packaging', 92],
-                   ['Construction', 87],
+                   ['Packaging', 76],
+                   ['Construction', 67],
           
-                   ['Other Sector', 85],
-                   ['Consumer Products', 77]
+                   ['Other Sector', 54],
+                   ['Consumer Products', 44]
                ]);
             var data = google.visualization.arrayToDataTable([
                 ['Element', 'Sector', { role: 'style' }],
-                ['Packaging', 92, '#45a247'],            // RGB value
-                ['Construction', 87, '#2ebf91'],            // English color name
+                ['Packaging', 76, '#30E8BF'],            // RGB value
+                ['Construction', 67, '#2ebf91'],            // English color name
                 
-                ['Other Sector', 85, '#b92b27'],
-                ['Consumer Products', 77, 'color: #8360c3' ], // CSS-style declaration
+                ['Other Sector', 54, '#F2C94C'],
+                ['Consumer Products', 44, 'color: #8360c3' ], // CSS-style declaration
             ]);
 
                //Set Options for our HBar Chart
@@ -130,18 +130,18 @@
                data.addColumn('string', 'By Sector');
                data.addColumn('number', 'Million Tonnes');
                data.addRows([
-                   ['Packaging', 88],
-                   ['Construction', 83],
-                   ['Consumer Products', 65],
-                   ['Other Sector', 47]
+                   ['Packaging', 70],
+                   ['Construction', 63],
+                   ['Consumer Products', 41],
+                   ['Other Sector', 39]
                    
                ]);
             var data = google.visualization.arrayToDataTable([
                 ['Element', 'Sector', { role: 'style' }],
-                ['Packaging', 88, '#45a247'],            // RGB value
-                ['Construction', 83, '#2ebf91'],            // English color name
-                ['Consumer Products', 65, 'color: #8360c3' ], // CSS-style declaration
-                ['Other Sector', 47, '#b92b27'],
+                ['Packaging', 70, '#30E8BF'],            // RGB value
+                ['Construction', 63, '#2ebf91'],            // English color name
+                ['Consumer Products', 41, 'color: #8360c3' ], // CSS-style declaration
+                ['Other Sector', 39, '#F2C94C'],
             ]);
 
                //Set Options for our HBar Chart
@@ -162,14 +162,14 @@
                 data.addColumn('string', 'Year');
                 data.addColumn('number', 'Avg Temp');
                 data.addRows([
-                ['2012', 21.65],
-                ['2013', 21.89],
-                ['2014', 22.01],
-                ['2015', 21.89],
-                ['2016', 23.45],
-                ['2017', 23.21],
-                ['2018', 23.35],
-                ['2019', 24.5]
+                ['2012', 28.91],
+                ['2013', 29.11],
+                ['2014', 29.23],
+                ['2015', 29.34],
+                ['2016', 29.56],
+                ['2017', 29.76],
+                ['2018', 30.12],
+                ['2019', 30.56]
                 ]);
 
                 // Set chart options
@@ -191,35 +191,35 @@
                data.addColumn('string', 'Month');
                data.addColumn('number', 'Millimetres');
                data.addRows([
-                   ['Jan', 248],
-                   ['Feb', 151],
-                   ['Mar', 144],
-                   ['Apr', 64],
-                   ['May', 5.87],
-                   ['Jun', 5.05],
-                   ['Jul', 5.18],
-                   ['Aug', 2.45],
-                   ['Sep', 3.61],
-                   ['Oct', 5.39],
-                   ['Nov', 33],
-                   ['Dec', 206]
+                   ['Jan', 75],
+                   ['Feb', 55],
+                   ['Mar', 140],
+                   ['Apr', 255],
+                   ['May', 200],
+                   ['Jun', 45],
+                   ['Jul', 25],
+                   ['Aug', 25],
+                   ['Sep', 25],
+                   ['Oct', 25],
+                   ['Nov', 70],
+                   ['Dec', 120]
                    
                ]);
                var data = google.visualization.arrayToDataTable([
                 ['Element', 'Rainfall in mm', { role: 'style' }],
-                ['Jan', 65, '#b92b27'],            // RGB value
-                ['Feb', 55, '#b92b27'],            // English color name
-                ['Mar', 95, '#b92b27'],            // English color name
-                ['Apr', 220, '#b92b27'],            // English color name
-                ['May', 175, '#b92b27'],            // English color name
-                ['Jun', 35, '#b92b27'],            // English color name
-                ['Jul', 20, '#b92b27'],            // English color name
-                ['Aug', 25, '#b92b27'],            // English color name
-                ['Sep', 30, '#b92b27'],            // English color name
-                ['Oct',55, '#b92b27'],            // English color name
+                ['Jan', 75, '#F2C94C'],            // RGB value
+                ['Feb', 55, '#F2C94C'],            // English color name
+                ['Mar', 140, '#F2C94C'],            // English color name
+                ['Apr', 255, '#F2C94C'],            // English color name
+                ['May', 200, '#F2C94C'],            // English color name
+                ['Jun', 45, '#F2C94C'],            // English color name
+                ['Jul', 25, '#F2C94C'],            // English color name
+                ['Aug', 25, '#F2C94C'],            // English color name
+                ['Sep', 25, '#F2C94C'],            // English color name
+                ['Oct', 25, '#F2C94C'],            // English color name
                 
-                ['Nov', 155, '#b92b27'],
-                ['Dec', 100, 'color: #b92b27' ], // CSS-style declaration
+                ['Nov', 70, '#F2C94C'],
+                ['Dec', 120, 'color: #F2C94C' ], // CSS-style declaration
             ]);
                
             
@@ -255,17 +255,17 @@
                ]);
 
                var data = google.visualization.arrayToDataTable([
-                ['Element', 'Million in mm', { role: 'style' }],
+                ['Element', 'Million Tonnes', { role: 'style' }],
             // English color name
-                ['2012', 38.64, '#b92b27'],            // English color name
-                ['2013', 36.84, '#b92b27'],            // English color name
-                ['2014', 39.64, '#b92b27'],            // English color name
-                ['2015', 42.71, '#b92b27'],            // English color name
-                ['2016', 47.77, '#b92b27'],            // English color name
-                ['2017',52.12, '#b92b27'],            // English color name
+                ['2012', 38.64, '#F2C94C'],            // English color name
+                ['2013', 36.84, '#F2C94C'],            // English color name
+                ['2014', 39.64, '#F2C94C'],            // English color name
+                ['2015', 42.71, '#F2C94C'],            // English color name
+                ['2016', 47.77, '#F2C94C'],            // English color name
+                ['2017',52.12, '#F2C94C'],            // English color name
                 
-                ['2018', 60.21, '#b92b27'],
-                ['2019', 63.56, 'color: #b92b27' ], // CSS-style declaration
+                ['2018', 60.21, '#F2C94C'],
+                ['2019', 63.56, 'color: #F2C94C' ], // CSS-style declaration
             ]);
             
                 
