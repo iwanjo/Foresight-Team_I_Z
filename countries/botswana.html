@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foresight - Botswana</title>
+    <link rel="icon" type="image/ico" href="../img/logo.png">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="countries.css">
+    
+</head>
+<body>
+    
+        
+        <h1 class="country-heading">Botswana</h1>
+        <h4 class="w-message">Welcome to Botswana's Dataset! Here you will find graphs and visualizations about climate change and changing weather conditions in Botswana.</h4>
+        <a href="../index.html" class="return">Click here to return to the Map of Africa</a>
+        <!--Div that will hold the visualisations-->
+    <table class="columns">
+        <tr>
+            <td><div id="chart_div"></div></td>
+            <td><div id="second_chart_div"></div></td>
+            <td><div id="third_chart_div"></div></td>
+            
+        </tr>
+        <tr>
+        <td><div id="fourth_chart_div"></div></td>
+        <td><div id="fifth_chart_div"></div></td>
+        <td><div id="sixth_chart_div"></div></td>
+
+    </tr>
+    </table>
+
+
+
+
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+         <script type="text/javascript">
+     
+           // Load the Visualization API and the corechart package.
+           google.charts.load('current', {'packages':['corechart']});
+     
+           // Set a callback to run when the Google Visualization API is loaded.
+           google.charts.setOnLoadCallback(drawChart);
+
+           google.charts.setOnLoadCallback(drawSecondGraph);
+
+           google.charts.setOnLoadCallback(drawThirdGraph);
+
+           google.charts.setOnLoadCallback(drawFourthGraph);
+
+           google.charts.setOnLoadCallback(drawFifthGraph);
+
+           google.charts.setOnLoadCallback(drawSixthGraph);
+                
+           // Callback that creates and populates a data table,
+           // instantiates the line chart, passes in the data and
+           // draws it.
+           function drawChart() {
+     
+             // Create the data table.
+             var head = "hi"
+             var data = new google.visualization.DataTable();
+             data.addColumn('string', 'Year');
+             data.addColumn('number', 'Tonnes');
+             data.addRows([
+               ['2012', 4.19],
+               ['2013', 5.18],
+               ['2014', 6.99],
+               ['2015', 7.10],
+               ['2016', 7.101],
+               ['2017', 7.87],
+               ['2018', 8.31],
+               ['2019', 8.81]
+             ]);
+     
+             // Set chart options
+             var options = {'title':'Carbon Dioxide Emissions Per Capita(Tonnes), 2010 to 2019',
+                            'width':500,
+                            'curveType': 'function',
+                            'legend': { position: 'bottom'},
+                            'height':350};
+     
+             // Instantiate and draw our chart, passing in some options.
+             var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+             chart.draw(data, options);
+           }
+
+           //Plastic Waste Production Graph
+
+           function drawSecondGraph(){
+               //Create the data table for our second graph and store it in an array
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'By Sector');
+               data.addColumn('number', 'Million Tonnes');
+               data.addRows([
+                   ['Construction', 65],
+                   ['Packaging', 56],
+                   ['', 54],
+                   ['Consumer Products', 34]
+               ]);
+            var data = google.visualization.arrayToDataTable([
+                ['Element', 'Sector', { role: 'style' }],
+                ['Construction', 140, '#155799'],            // English color nam
+                ['Packaging', 120, '#A7BFE8'],            // RGB value
+                ['Diamond Mining', 100, '#dd1818'],
+                ['Consumer Products', 89, 'color: #237A57' ], // CSS-style declaration
+            ]);
+
+               //Set Options for our HBar Chart
+               var options = {title: 'Plastic materials production By Industrial Sector measured in Millions of Tonnes, 2019',
+               width:500,
+               height:350};
+
+               //Instantiate and draw the chart for Anthony's Pizza
+               var chart = new google.visualization.BarChart(document.getElementById('second_chart_div'));
+               chart.draw(data, options);
+           }
+           //Plastic Waste Generated Graph
+
+           function drawThirdGraph(){
+               //Create the data table for our second graph and store it in an array
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'By Sector');
+               data.addColumn('number', 'Million Tonnes');
+               data.addRows([
+               ['Construction', 120],
+                   ['Packaging', 100],
+                   ['Consumer Products', 67],
+                   ['Diamond Mining', 50]
+                   
+               ]);
+
+
+               //Set Options for our HBar Chart
+               var options = {title: 'Plastic materials waste generation By Industrial Sector measured in Millions of Tonnes, 2019',
+               width:500,
+               height:350};
+
+               //Instantiate and draw the chart for Anthony's Pizza
+               var chart = new google.visualization.PieChart(document.getElementById('third_chart_div'));
+               chart.draw(data, options);
+           }
+
+           function drawFourthGraph() {
+     
+                // Create the data table.
+                
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Year');
+                data.addColumn('number', 'Avg Temp');
+                data.addRows([
+                ['2012', 24.51],
+                ['2013', 22.23],
+                ['2014', 22.21],
+                ['2015', 22.56],
+                ['2016', 22.65],
+                ['2017', 22.78],
+                ['2018', 22.81],
+                ['2019', 23.78]
+                ]);
+
+                // Set chart options
+                var options = {'title':'Average Temperature in Degrees Celsius, from 2012 to 2019',
+                                'width':500,
+                                'curveType': 'function',
+                                'legend': { position: 'bottom'},
+                                'height':350};
+
+                // Instantiate and draw our chart, passing in some options.
+                var chart = new google.visualization.LineChart(document.getElementById('fourth_chart_div'));
+                chart.draw(data, options);
+            }
+
+            
+           function drawFifthGraph(){
+               //Create the data table for our second graph and store it in an array
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'Month');
+               data.addColumn('number', 'Millimetres');
+               data.addRows([
+                   ['Jan', 248],
+                   ['Feb', 151],
+                   ['Mar', 144],
+                   ['Apr', 64],
+                   ['May', 5.87],
+                   ['Jun', 5.05],
+                   ['Jul', 5.18],
+                   ['Aug', 2.45],
+                   ['Sep', 3.61],
+                   ['Oct', 5.39],
+                   ['Nov', 33],
+                   ['Dec', 206]
+                   
+               ]);
+               var data = google.visualization.arrayToDataTable([
+                ['Element', 'Rainfall in mm', { role: 'style' }],
+                ['Jan', 100, '#155799'],            // RGB value
+                ['Feb', 100, '#155799'],            // English color name
+                ['Mar', 85, '#155799'],            // English color name
+                ['Apr', 40, '#155799'],            // English color name
+                ['May', 20, '#155799'],            // English color name
+                ['Jun', 10, '#155799'],            // English color name
+                ['Jul', 6, '#155799'],            // English color name
+                ['Aug', 3, '#155799'],            // English color name
+                ['Sep', 17, '#155799'],            // English color name
+                ['Oct', 45, '#155799'],            // English color name
+                ['Nov', 65, '#155799'],
+                ['Dec', 100, 'color: #155799' ], // CSS-style declaration
+            ]);
+               
+            
+                
+
+               //Set Options for our HBar Chart
+               var options = {title: 'Precipitation/Rainfall Amount Measured in Millimetres, Year of 2019',
+               width:500,
+               height:350};
+
+               //Instantiate and draw the chart for Anthony's Pizza
+               var chart = new google.visualization.BarChart(document.getElementById('fifth_chart_div'));
+               chart.draw(data, options);
+           }
+
+
+
+           function drawSixthGraph(){
+               //Create the data table for our second graph and store it in an array
+               var data = new google.visualization.DataTable();
+               data.addColumn('string', 'Year');
+               data.addColumn('number', 'Million tonnes');
+               data.addRows([
+                   ['2012', 38.64],
+                   ['2013', 36.84],
+                   ['2014', 39.64],
+                   ['2015', 42.71],
+                   ['2016', 47.77],
+                   ['2017', 52.12],
+                   ['2018', 60.21],
+                   ['2019', 63.56],
+                   
+               ]);
+
+               var data = google.visualization.arrayToDataTable([
+                ['Element', 'Million in mm', { role: 'style' }],
+            // English color name
+                ['2012', 34.18, '#155799'],            // English color name
+                ['2013', 66.34, '#155799'],            // English color name
+                ['2014', 34.32, '#155799'],            // English color name
+                ['2015', 131.85, '#155799'],            // English color name
+                ['2016', 69.99, '#155799'],            // English color name
+                ['2017', 80.23, '#155799'],            // English color name
+                ['2018', 150.89, '#155799'],
+                ['2019', 90.65, 'color: #155799' ], // CSS-style declaration
+            ]);
+            
+                
+
+               //Set Options for our HBar Chart
+               var options = {title: 'Total greenhouse gas missions, measured in millions of tonnes',
+               width:500,
+               'curveType': 'function',
+               height:350};
+
+               //Instantiate and draw the chart for Anthony's Pizza
+               var chart = new google.visualization.LineChart(document.getElementById('sixth_chart_div'));
+               chart.draw(data, options);
+           }
+
+        
+
+
+         </script>
+</body>
+</html>
