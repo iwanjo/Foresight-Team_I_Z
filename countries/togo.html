@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foresight - Benin</title>
+    <title>Foresight - Togo</title>
     <link rel="icon" type="image/ico" href="../img/logo.png">
 
     <!-- Bootstrap CDN -->
@@ -15,8 +15,8 @@
 <body>
     
         
-        <h1 class="country-heading">Benin</h1>
-        <h4 class="w-message">Welcome to Benin's Dataset! Here you will find graphs and visualizations about climate change and changing weather conditions in Benin.</h4>
+        <h1 class="country-heading">Togo</h1>
+        <h4 class="w-message">Welcome to Togo's Dataset! Here you will find graphs and visualizations about climate change and changing weather conditions in Togo.</h4>
         <a href="../index.html" class="return">Click here to return to the Map of Africa</a>
         <!--Div that will hold the visualisations-->
     <table class="columns">
@@ -68,14 +68,14 @@
              data.addColumn('string', 'Year');
              data.addColumn('number', 'Tonnes');
              data.addRows([
-               ['2012', 5.31],
-               ['2013', 5.65],
-               ['2014', 6.16],
-               ['2015', 6.35],
-               ['2016', 6.75],
-               ['2017', 7.51],
-               ['2018', 8.98],
-               ['2019', 10.21]
+               ['2012', 2.29],
+               ['2013', 2.24],
+               ['2014', 2.22],
+               ['2015', 2.64],
+               ['2016', 2.75],
+               ['2017', 2.99],
+               ['2018', 3.11],
+               ['2019', 3.42]
              ]);
      
              // Set chart options
@@ -98,10 +98,10 @@
                data.addColumn('string', 'By Sector');
                data.addColumn('number', 'Million Tonnes');
                data.addRows([
-                   ['Packaging', 48],
-                   ['Construction', 32],
-                   ['Consumer Products', 15],
-                   ['Other Sector', 7],
+                   ['Packaging', 62],
+                   ['Construction', 55],
+                   ['Consumer Products', 44],
+                   ['Fishing', 21],
 
                ]);
 
@@ -123,10 +123,10 @@
                data.addColumn('string', 'By Sector');
                data.addColumn('number', 'Million Tonnes');
                data.addRows([
-                   ['Packaging', 45],
-                   ['Construction', 33],
-                   ['Consumer Products', 15],
-                   ['Other Sector', 7]
+                   ['Packaging', 61],
+                   ['Construction', 51],
+                   ['Consumer Products', 40],
+                   ['Fishing', 17]
                    
                ]);
 
@@ -151,10 +151,10 @@
                 data.addRows([
                 ['2012', 32],
                 ['2013', 32],
-                ['2014', 32],
+                ['2014', 33],
                 ['2015', 32],
-                ['2016', 30],
-                ['2017', 29],
+                ['2016', 31],
+                ['2017', 30],
                 ['2018', 28],
                 ['2019', 28]
                 ]);
@@ -167,7 +167,7 @@
                                 'height':350};
 
                 // Instantiate and draw our chart, passing in some options.
-                var chart = new google.visualization.LineChart(document.getElementById('fourth_chart_div'));
+                var chart = new google.visualization.BarChart(document.getElementById('fourth_chart_div'));
                 chart.draw(data, options);
             }
 
@@ -178,23 +178,20 @@
                data.addColumn('string', 'Month');
                data.addColumn('number', 'Millimetres');
                data.addRows([
-                   ['Jan', 10],
+                   ['Jan', 15],
                    ['Feb', 35],
-                   ['Mar', 75],
-                   ['Apr', 135],
-                   ['May', 195],
-                   ['Jun', 355],
-                   ['Jul', 145],
-                   ['Aug', 65],
-                   ['Sep', 100],
-                   ['Oct', 125],
-                   ['Nov', 40],
-                   ['Dec', 20]
+                   ['Mar', 80],
+                   ['Apr', 105],
+                   ['May', 155],
+                   ['Jun', 200],
+                   ['Jul', 55],
+                   ['Aug', 15],
+                   ['Sep', 50],
+                   ['Oct', 155],
+                   ['Nov', 20],
+                   ['Dec', 5]
                    
                ]);
-
-            
-                
 
                //Set Options for our HBar Chart
                var options = {title: 'Precipitation/Rainfall Amount Measured in Millimetres, Year of 2019',
@@ -228,14 +225,14 @@
                var data = google.visualization.arrayToDataTable([
                 ['Element', 'Million in mm', { role: 'style' }],
             // English color name
-                ['2012', 23.62, '#52c234'],            // English color name
-                ['2013', 24.07, '#52c234'],            // English color name
-                ['2014', 24.57, '#52c234'],            // English color name
-                ['2015', 25.42, '#52c234'],            // English color name
-                ['2016', 26.53, '#52c234'],            // English color name
-                ['2017', 26.89, '#52c234'],            // English color name
-                ['2018', 27.34, '#52c234'],
-                ['2019', 28.76, 'color: #52c234' ], // CSS-style declaration
+                ['2012', 14.05, '#ffc500'],            // English color name
+                ['2013', 14.31, '#ffc500'],            // English color name
+                ['2014', 14.26, '#ffc500'],            // English color name
+                ['2015', 15.31, '#ffc500'],            // English color name
+                ['2016', 15.37, '#ffc500'],            // English color name
+                ['2017', 15.65, '#ffc500'],            // English color name
+                ['2018', 16.21, '#ffc500'],
+                ['2019', 16.77, 'color: #ffc500' ], // CSS-style declaration
             ]);
             
                 
